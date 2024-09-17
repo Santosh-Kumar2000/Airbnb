@@ -4,7 +4,6 @@ import com.airtravel.entity.AppUser;
 import com.airtravel.payload.LoginDto;
 import com.airtravel.repository.AppUserRepository;
 import com.airtravel.service.UserService;
-import com.travelbnb.payload.JWTTokenDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,8 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/v1/user")
 public class UserController {
-
-
     private UserService userService;
     private AppUserRepository appUserRepository;
 
